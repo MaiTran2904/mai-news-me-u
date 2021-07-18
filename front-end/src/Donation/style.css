@@ -1,0 +1,248 @@
+
+
+.donation .container {
+    max-width: 100%;
+}
+
+.donation .donation-item {
+    position: relative;
+    margin: 0 0;
+    text-align: center;
+}
+
+.donation .donation-img {
+    position: relative;
+    margin-bottom: 15px;
+    z-index: 1;
+}
+
+.donation .donation-item img {
+    margin: 0 auto;
+    width: 100%;
+    height: 200px;
+}
+
+#header-sumary{
+    border: .1rem solid #e6e6e6;
+    text-align: center;
+    border-radius: .4rem;
+    background-clip: padding-box;
+}
+
+.donation .donation-item p {
+    font-size: 18px;
+    font-style: italic;
+}
+
+
+.donation .owl-dots {
+    margin-top: 15px;
+    text-align: center;
+}
+
+.donation .owl-dot {
+    display: inline-block;
+    margin: 0 5px;
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background: rgba(256, 256, 256, .5);
+}
+
+.donation .owl-dot.active {
+    background: #ffffff;
+}
+.donates-form{
+    width:auto;
+    height:600px;
+    overflow-x:hidden;
+    overflow-y:auto;
+}
+/* CSS MY DONATION */
+#header-donation{
+    border: .1rem solid #e6e6e6;
+    text-align: center;
+    border-radius: .4rem;
+    background-clip: padding-box;
+}
+#second-form{
+    margin-top: 10px;
+    width: auto;
+    border: .1rem solid #e6e6e6;    
+    border-radius: .4rem;
+    background-clip: padding-box;
+}
+#month-amount{
+    margin-top: 10px;
+    border: .1rem solid #e6e6e6;    
+    border-radius: .4rem;
+    background-clip: padding-box;
+}
+.radio-test {
+    display: none;   
+}  
+
+/* END CSS MY DONATION */
+
+/* START CSS MY DETAIL */
+#header-detail{
+    border: .1rem solid #e6e6e6;
+    text-align: center;
+    border-radius: .4rem;
+    background-clip: padding-box; 
+}
+#content-detail{   
+    border: .1rem solid #e6e6e6;
+    border-radius: .4rem;
+    margin-top: 10px;
+    background-clip: padding-box; 
+}
+
+.project-tab #tabs .nav-tabs .nav-item.show .nav-link, .nav-tabs .nav-link.active {
+    /* color: #0062cc; */
+    background-color: transparent;
+    border-color: transparent transparent #f3f3f3;
+    border-bottom: 3px solid !important;
+    font-size: 16px;
+    font-weight: bold;
+}
+.btn-footer {
+    padding: 12px 25px;
+    font-size: 14px;
+    font-weight: 200px;
+    letter-spacing: 1px;
+    color: #ffffff;
+    background: rgb(34, 187, 234);
+    border: 2px solid transparent;
+    border-radius: 0;
+    box-shadow: inset 0 0 0 50px rgb(255, 153, 51) ;
+    transition: ease-out 0.3s;
+    -webkit-transition: ease-out 0.3s;
+    -moz-transition: ease-out 0.3s;
+}
+
+.btn-footer:hover {
+    color: rgb(34, 187, 234);
+    background: transparent;
+    box-shadow: inset 0 0 0 0 rgb(34, 187, 234);
+    border-color: rgb(34, 187, 234);
+} 
+
+/* END CSS MY DETAIL */
+
+/* START CSS MY SUMARY */
+.lock{   
+    margin: auto;
+    width: 50%;
+    padding: 10px;
+    text-align: center;
+}
+
+#content-sumary{
+    border: .1rem solid #e6e6e6;
+    margin-top: 10px;
+    border-radius: .4rem;
+    background-clip: padding-box;
+}
+/* END CSS MY SUMARY */
+
+#payment-method{
+    border: .1rem solid #e6e6e6;
+    border-radius: .4rem;
+    
+    background-clip: padding-box;
+}
+
+/* FOOTER DONATION */
+
+
+#imgFooter-donation{
+    display: block;
+    width: 120px;
+    height:120px;
+    background: #E6E7ED;
+    -moz-border-radius: 60px;
+    -webkit-border-radius: 60px;    
+    text-align:center;  
+}
+
+
+
+
+/* Donation */
+.btn-blue-other,
+.btn-blue {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  background-color: rgb(34, 187, 234);
+  color: #fff;
+  border-radius: 5px;
+  border: 0;
+  padding: 0;
+  width: 75px;
+  height: 37px;
+  margin-top: 8px;
+}
+.btn-green {
+  font-family: "Roboto Condensed", sans-serif;
+  font-weight: bold;
+  background-color: #8ab042;
+  color: #fff;
+  border-radius: 5px;
+  border: 0;
+  padding: 0;
+  width: 114px;
+  height: 37px;
+  margin-top: 8px;
+}
+#other-input {
+  display: none;
+}
+#other-input input {
+  position: absolute;
+  font-weight: bold;
+  background-color: #fff;
+  color: rgb(34, 187, 234);
+  border-radius: 5px;
+  border: 0;
+  border: 5px solid rgb(34, 187, 234);
+  padding: 0 0 3px 10px;
+  width: 75px;
+  height: 37px;
+  margin: -36px 230px;
+}
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+#showValue input {
+    position: relative;
+    font-weight: bold;
+    background-color: #fff;
+    color: rgb(34, 187, 234);
+    border-radius: 5px;
+    border: 0;
+    border: 5px solid rgb(34, 187, 234);
+    /* padding: 0 0 3px 10px; */
+    width: 75px;
+    height: 37px;
+    /* margin: -36px 230px; */
+  }
+  #other-input1 {
+    display: none;
+  }
+  #other-input1 input {
+    position: absolute;
+    font-weight: bold;
+    background-color: #fff;
+    color: rgb(34, 187, 234);
+    border-radius: 5px;
+    border: 0;
+    border: 5px solid rgb(34, 187, 234);
+    padding: 0 0 3px 10px;
+    width: 75px;
+    height: 37px;
+    margin: -36px 230px;
+  }
