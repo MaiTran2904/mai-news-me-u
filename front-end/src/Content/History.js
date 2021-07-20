@@ -1,103 +1,76 @@
 import React, { Component } from 'react';
-import Title from '../components/Title-components/Title';
+import { Carousel, Card } from 'antd';
+import { SlideSectionStyles, BlogCardItemStyle } from './styleHistory';
 
-class History extends Component {
-    render() {
-        return (
-            <React.Fragment>
-            <section id="project" className="project-area pt-125 pb-130">
-          <div className="container">
-            <div className="row justify-content-center">
-              <div className="col-lg-6">
-                <div className="section-title text-center pb-50">
-                  <Title title="Histoty"></Title>
-                </div> 
-              </div>
-            </div> {/* row */}
-          </div>
-          <div className="container-fluid">
-            <div className="row project-active">
-              <div className="col-lg-4">
-                <div className="single-project">
-                  <div className="project-image">
-                    <img src="assets/images/project/p-1.jpg" alt="Project" />
-                  </div>
-                  <div className="project-content">
-                    <a className="project-title">PN Việt Nam kỉ niệm 10 năm hoạt động.</a>
-                    <a className="project-title">7/10/2020</a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="single-project">
-                  <div className="project-image">
-                    <img src="assets/images/project/p-2.png" alt="Project" />
-                  </div>
-                  <div className="project-content">
-                    <a className="project-title" href="#">Hợp tác cùng đối tác mới là trường Cao đẳng Nghề Đà Nẵng</a>
-                    <a className="project-title">2017</a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="single-project">
-                  <div className="project-image">
-                    <img src="assets/images/project/p-3.jpg" alt="Project" />
-                  </div>
-                  <div className="project-content">
-                    <a className="project-title" href="#">Kết hợp đào tạo cùng trường Cao đẳng Kĩ thuật Đà Nẵng</a>
-                    <a className="project-title">2016</a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="single-project">
-                  <div className="project-image">
-                    <img src="assets/images/project/p-4.png" alt="Project" />
-                  </div>
-                  <div className="project-content">
-                    <a className="project-title" href="#">Kỉ niệm 5 năm hoạt động.</a>
-                    <a className="project-title">2015</a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="single-project">
-                  <div className="project-image">
-                    <img src="assets/images/project/p-5.png" alt="Project" />
-                  </div>
-                  <div className="project-content">
-                    <a className="project-title" href="#">Trở thành một tổ chức hoạt động độc lập. </a><br />
-                    <a className="project-title">2014</a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="single-project">
-                  <div className="project-image">
-                    <img src="assets/images/project/p-2.png" alt="Project" />
-                  </div>
-                  <div className="project-content">
-                    <a className="project-title" href="#">Home Interior Design</a>
-                  </div>
-                </div>
-              </div>
-              <div className="col-lg-4">
-                <div className="single-project">
-                  <div className="project-image">
-                    <img src="assets/images/project/p-4.png" alt="Project" />
-                  </div>
-                  <div className="project-content">
-                    <a className="project-title" href="#">Home Interior Design</a>
-                  </div>
-                </div>
-              </div>
+const { Meta } = Card;
+class History extends Component
+{
+  listSlides = [
+    {
+      id: 1,
+      image: 'assets/images/project/pnv.png',
+      title: 'Năm 2010',
+      description:
+        'Khởi động dự án PN Việt Nam tại Đà Nẵng với 30 em sinh viên.',
+    },
+    {
+      id: 2,
+      image: 'assets/images/project/khoa1.jpeg',
+      title: 'Năm 2012',
+      description:
+        'Lễ tốt nghiệp niên khóa đầu tiên của PN Philippines (24 sinh viên) và PN Việt Nam (27 sinh viên)',
+    },
+    {
+      id: 3,
+      image: 'assets/images/project/pn.png',
+      title: 'Năm 2013',
+      description:
+        'Thành lập Passerelles numériques Hồng Kông, quỹ từ thiện do các tình nguyện viên sáng lập với mong muốn quảng bá PN và gây quỹ ủng hộ cho dự án.',
+    },
+    {
+      id: 4,
+      image: 'assets/images/project/pn10years.png',
+      title: 'Năm 2015',
+      description:
+        'Passerelles numériques kỉ niệm 10 năm thành lập! Kể từ năm 2010, PN đã đào tạo miễn phí chương trình Công nghệ thông tin cho hơn 1500 sinh viên.',
+    },
+    {
+      id: 5,
+      image: 'assets/images/project/pnsea.jpg',
+      title: 'Năm 2016',
+      description:
+        'Sự ra đời của tổ chức pháp nhân PN SEA (Đông Nam Á) ở Singapore với mục tiêu gây quỹ và nâng cao nhận thức về những hành động của tổ chức Passerelles numériques.',
+    },
+  ];
+
+  render()
+  {
+    return (
+      <SlideSectionStyles>
+        <div className="container slide-section">
+          <p className="title">History</p>
+        </div>
+        <Carousel
+          centerMode
+          className="slides font-manrope"
+          autoplay
+          dotPosition="bottom"
+          slidesToShow={3}
+          dots
+        >
+          {this.listSlides.map( item =>
+          (
+            <div key={String( `slide-${ item.id }` )}>
+              <BlogCardItemStyle>
+                <Card hoverable cover={<img alt="example" src={item.image || ''} />} className="card">
+                  <Meta title={item.title} description={item.description} />
+                </Card>
+              </BlogCardItemStyle>
             </div>
-          </div>
-        </section>
-        </React.Fragment>
-        );
-    }
-}
-
+          ) )}
+        </Carousel>
+      </SlideSectionStyles>
+    );
+  }
+};
 export default History;
