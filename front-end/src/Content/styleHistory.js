@@ -1,7 +1,8 @@
 import styled from 'styled-components';
 
 export const SlideSectionStyles = styled.div`
-  background: #faca61;
+  background: #eb9736;
+  padding: 40px 0px;
 
   .title {
     font-size: 48px;
@@ -69,8 +70,8 @@ export const SlideSectionStyles = styled.div`
     justify-content: center;
   }
 
-  @media (max-width: 1470px) {
-    padding: 50px 0;
+  @media (min-width: 1470px) {
+    padding: 50px 8%;
     overflow: visible;
 
     .slide-section {

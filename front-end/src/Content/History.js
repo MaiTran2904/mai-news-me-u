@@ -53,20 +53,20 @@ class History extends Component
         <Carousel
           centerMode
           className="slides font-manrope"
-          // autoplay
+          autoplay
           dotPosition="bottom"
           slidesToShow={3}
           dots
         >
           {this.listSlides.map( item =>
           (
-            <div key={String( `slide-${ item.id }` )}>
-              <BlogCardItemStyle>
-                <Card hoverable cover={<img alt="example" src={item.image || ''} />} className="card">
-                  <Meta title={item.title} description={item.description} />
-                </Card>
-              </BlogCardItemStyle>
-            </div>
+            <div key={String( `slide-${ item.id }` )} className="card">
+                <BlogCardItemStyle>
+                  <Card hoverable cover={<img alt="example" src={item.image || ''} />}>
+                    <Meta title={item.title} description={item.description} />
+                  </Card>
+                </BlogCardItemStyle>
+              </div>
           ) )}
         </Carousel>
       </SlideSectionStyles>
