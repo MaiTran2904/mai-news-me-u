@@ -176,6 +176,16 @@ export const BlogCardItemStyle = styled.div`
     font-size: 20px;
     line-height: 140%;
   }
+
+  .ant-card-meta-description {
+    max-height: 100px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    display: -webkit-box;
+    -webkit-line-clamp: 4;
+    -webkit-box-orient: vertical;
+  }
+
   .ant-tag {
     border: none;
   }

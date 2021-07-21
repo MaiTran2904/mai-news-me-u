@@ -53,7 +53,7 @@ class History extends Component
         <Carousel
           centerMode
           className="slides font-manrope"
-          autoplay
+          // autoplay
           dotPosition="bottom"
           slidesToShow={3}
           dots
